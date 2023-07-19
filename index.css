@@ -236,8 +236,9 @@ body {
     font-size:30px;
 }
 .container p {
+    text-align: justify;
     font-size:21px;
-    padding-right: 4vw;
+    padding-right: 2vw;
 }
 .cards-container {
     display: flex;
@@ -254,6 +255,13 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
     flex: 1 0 300px;
+}
+
+.card.about{
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.1),rgba(255,255,255,0.1)) ;
+}
+.card h3{
+    font-size: 27px;
 }
 
 .card.programming{
@@ -335,27 +343,6 @@ body {
         transform: scale(0.69);
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .btn_one {
     font-size:18px;
