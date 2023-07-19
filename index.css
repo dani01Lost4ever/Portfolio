@@ -259,7 +259,7 @@ body {
 .card.programming{
     background-image: 
     linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
-    url("./docs/assets/card-programming.jpeg");
+    url("./docs/assets/cardprogramming.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,7 +267,7 @@ body {
 .card.web{
     background-image: 
     linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
-    url("./docs/assets/card-web.jpg");
+    url("./docs/assets/cardweb.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,7 +275,7 @@ body {
 .card.softskill{
     background-image: 
     linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
-    url("./docs/assets/card-softskill.png");
+    url("./docs/assets/cardsoftskill.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
