@@ -172,10 +172,29 @@ body {
     cursor: pointer;
     color:var(--dark_blue_backgroud);
 }
+.angle{
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    text-align: center;
+    padding: 3%;
+    border: 5px solid #fff; 
+    border-radius: 50%;
+    transition: all 0.3s ease; 
+}
+.angle:hover{
+    color:var(--dark_blue_backgroud);
+    background-color: #fff;
+}
+
+.closeBtn{
+    width: 40px;
+}
 .container {
     width:90vw;
     height:90vh;
-    padding:7vh 7vw;
+    padding:3vh 7vw;
+    padding-bottom: 8vh;
     background:var(--dark_blue_backgroud);
     color:#fff;
     z-index:9;
@@ -186,7 +205,7 @@ body {
 }
 .container div {
     font-size:25px;
-    margin:20px 0px;
+    /* margin:20px 0px; commentato per fare le card staccate non so a cosa serva*/
     transition:0.4s ease-in-out;
 }
 .container div:hover {
@@ -213,10 +232,131 @@ body {
     font-size:60px;
     text-decoration:underline;
 }
+.container h2{
+    font-size:30px;
+}
 .container p {
     font-size:21px;
     padding-right: 4vw;
 }
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 4px solid #fff;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    flex: 1 0 300px;
+}
+
+.card.programming{
+    background-image: 
+    linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
+    url("/docs/assets/card-programming.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card.web{
+    background-image: 
+    linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
+    url("/docs/assets/card-web.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card.softskill{
+    background-image: 
+    linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
+    url("/docs/assets/card-softskill.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card li{
+    line-height: 1.2;
+    font-size: 21px;
+    margin-bottom: 10px;
+    padding-left: 15px; 
+    text-indent: -10px; 
+}
+
+.card ul {
+    list-style: none;
+    padding-inline-start: 20px;
+    list-style-position: inside; 
+}
+.card ul > li::before {
+    content: "➤";
+    transform: scale(0.2);
+    display: inline-block;
+    animation: pulse infinite alternate 0.9s;
+}
+.card ul > li:nth-child(1)::before {
+    animation-delay: -0.2s;
+}
+.card ul > li:nth-child(2)::before {
+    animation-delay: -0.4s;
+}
+.card ul > li:nth-child(3)::before {
+    animation-delay: -0.6s;
+}
+.card ul > li:nth-child(4)::before {
+    animation-delay: -0.8s;
+}
+.card ul > li:nth-child(5)::before {
+    animation-delay: -1s;
+}
+.card ul > li:nth-child(6)::before {
+    animation-delay: -1.2s;
+}
+.card ul > li:nth-child(7)::before {
+    animation-delay: -1.4s;
+}
+.card ul > li:nth-child(8)::before {
+    animation-delay: -1.6s;
+}
+.card ul > li:nth-child(9)::before {
+    animation-delay: -1.8s;
+}
+.card ul > li:nth-child(10)::before {
+    animation-delay: -2s;
+}
+@keyframes pulse {
+    to {
+        transform: scale(0.69);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn_one {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
@@ -363,5 +503,19 @@ body {
     }
     #box div {
         width:100%;
+    }
+    .angle{
+        height: 30px;
+        width: 30px;
+        font-size: 35px;
+        padding: 0px;
+        border: none; 
+    }
+    .closeBtn{
+        width: 30px;
+    }
+    .card{
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 }
