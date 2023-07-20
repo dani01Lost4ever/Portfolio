@@ -193,7 +193,7 @@ body {
 .container {
     width:90vw;
     height:90vh;
-    padding:3vh 7vw;
+    padding:3vh 5vw;
     padding-bottom: 8vh;
     background:var(--dark_blue_backgroud);
     color:#fff;
@@ -252,6 +252,7 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
     flex: 1 0 300px;
@@ -436,17 +437,17 @@ body {
     height:100vh;
 }
 ::-webkit-scrollbar {
-    width:5px;
+    width:10px;
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #fff; 
+    background: rgba(23, 40, 86, 0.8); 
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--dark_blue_backgroud); 
+    background: #fff; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(23, 40, 86, 0.8); 
+    background-color: var(--middle_h1);
 }
 ::selection {
 	color: #fff;
