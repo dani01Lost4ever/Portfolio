@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Busetto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -38,7 +39,7 @@
         <table>
                 <tr>
                     <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.facebook.com/daniel007boss/" class="social"><i class="fab fa-facebook"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://twitter.com/dani01_cs" class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://t.me/dani01_CS" class="social"><i class="fab fa-telegram"></i></a></td>
                     <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/daniel_busetto_/" class="social"><i class="fab fa-instagram"></i></a></td>
                     <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://github.com/dani01Lost4ever" class="social"><i class="fab fa-github"></i></a></td>
                 </tr>
@@ -120,17 +121,22 @@
         </div>
           <div id="contact_container" class="container">
             <div onclick="closecontact()" class="closeBtn"><i class="fas fa-angle-down angle"></i></div>
-            <h1>contact.</h1>
+            <h1>Contacts</h1>
             <section>
-                <h2>contact me</h2>
-                <p>
+                <h2>Message me</h2>
+                <div class="contactForm">
                     <form method="post" action="https://forms.un-static.com/forms/06ae581a12c83f106b3f65c2ef370c12f1326d18">
-                        <input name="Name" type="text" placeholder="name" required>
-                        <input name="Email" type="email" placeholder="email" required><br>
-                        <textarea name="Message" placeholder="your message" required rows="5"></textarea><br>
-                        <button type="submit" class="btn_one">send</button>
+                        <input name="Name" type="text" placeholder="Name..." required class="hoverClass">
+                        <input name="Email" type="email" placeholder="Email..." required class="hoverClass">
+                        <input name="Subject" type="text" placeholder="Subject..." required class="hoverClass"><br>
+                        <textarea name="Message" placeholder="Leave your message here!" required rows="5" class="hoverClass"></textarea><br>
+                        <button type="submit" class="btn_one">
+                            <span class="material-symbols-outlined">
+                                send
+                            </span>
+                        </button>
                     </form> 
-                </p>
+                </div>
             </section>
         </div>
     <script src="index.js" type="text/javascript"></script>

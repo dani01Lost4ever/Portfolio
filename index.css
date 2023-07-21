@@ -345,7 +345,29 @@ body {
    }
 }
 
-.btn_one {
+.contactForm{
+    border: 4px solid #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(0deg, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
+    url("./docs/assets/onlypc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hoverClass{
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out;
+}
+.hoverClass:hover{
+    background: 
+    linear-gradient(0deg, rgba(0,0,0,0.4),rgba(0,0,0,0.4)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3));
+}
+
+/* .btn_one {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
     color:#fff;
@@ -356,12 +378,53 @@ body {
     font-weight:bold;
     margin:2vh 10px;
     transition:0.4s ease-in-out;
+} */
+.btn_one {
+    font-size:22px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    border-radius:5px;
+    font-weight:bold;
+    margin:1vh 10px;
+    border: 4px #fff solid;
 }
-.btn_one:hover {
+
+.btn_one {
+    --c:  var(--middle_h1);
+    
+     
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  .btn_one:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  .btn_one:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+  
+  
+  
+/* .btn_one:hover {
     cursor:pointer;
     color:var(--dark_blue_backgroud);
     background:#fff;
-}
+} */
+
 .btn_two {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
