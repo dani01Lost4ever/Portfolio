@@ -11,9 +11,22 @@
     justify-content : center;
     background: 
     linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3));
+    position: relative;
   }
-  .swiperContent{
-    padding-left: 80px;
+  .swiperContent {
+    display: flex;
+  }
+  
+  .content-text {
+    flex: 1;
+    padding-right: 20px; /* Adjust the spacing between text and image */
+  }
+  
+  .content-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   
   /* Style the images in the slides */
