@@ -231,6 +231,7 @@ body {
 .container h1 {
     font-size:60px;
     text-decoration:underline;
+    text-decoration-skip-ink: none;
 }
 .container h2{
     font-size:30px;
