@@ -1,3 +1,4 @@
+
 function showabout(){
     $("#about_container").css("display","inherit");
     $("#about_container").addClass("animated slideInLeft");
@@ -15,7 +16,47 @@ function closeabout(){
 function showwork(){
     $("#work_container").css("display","inherit");
     $("#work_container").addClass("animated slideInRight");
-    showCarousel();
+
+    //     const swiper = new Swiper('.swiper', {
+    //         direction: 'horizontal',
+    //         loop: true,
+    //         pagination: {
+    //           el: '.swiper-pagination',
+    //         },
+    //         navigation: {
+    //           nextEl: '.swiper-button-next',
+    //           prevEl: '.swiper-button-prev',
+    //         },
+    //         scrollbar: {
+    //           el: '.swiper-scrollbar',
+    //         }
+    //   });
+    let swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true, // Enable infinite loop
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
     setTimeout(function(){
         $("#work_container").removeClass("animated slideInRight");
     },800);
@@ -52,22 +93,3 @@ setTimeout(function(){
       $("#work").removeClass("animated fadeIn");
     },1000);
 },1500);
-
-
-function showCarousel(){
-    var elem = document.querySelector(".main-carousel");
-    var flkty = new Flickity(elem, {
-        lazyLoad: true,
-        freeScroll: true,
-        autoPlay: true,
-        autoPlay: 1000,
-        cellAlign: "center",
-        contain: true,
-        draggable: '>1',
-        friction: 0.1
-    });
-    flkty.reloadCells();
-    flkty.resize();
-    $(".main-carousel").addClass("fadeIn");
-    console.log("Carousel Inizialized");
-}
