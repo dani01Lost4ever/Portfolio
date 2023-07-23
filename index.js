@@ -15,6 +15,7 @@ function closeabout(){
 function showwork(){
     $("#work_container").css("display","inherit");
     $("#work_container").addClass("animated slideInRight");
+    showCarousel();
     setTimeout(function(){
         $("#work_container").removeClass("animated slideInRight");
     },800);
@@ -51,3 +52,22 @@ setTimeout(function(){
       $("#work").removeClass("animated fadeIn");
     },1000);
 },1500);
+
+
+function showCarousel(){
+    var elem = document.querySelector(".main-carousel");
+    var flkty = new Flickity(elem, {
+        lazyLoad: true,
+        freeScroll: true,
+        autoPlay: true,
+        autoPlay: 1000,
+        cellAlign: "center",
+        contain: true,
+        draggable: '>1',
+        friction: 0.1
+    });
+    flkty.reloadCells();
+    flkty.resize();
+    $(".main-carousel").addClass("fadeIn");
+    console.log("Carousel Inizialized");
+}

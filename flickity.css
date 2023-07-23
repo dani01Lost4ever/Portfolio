@@ -135,3 +135,22 @@ https://flickity.metafizzy.co
   .flickity-page-dots .dot.is-selected {
     opacity: 1;
   }
+
+
+  @keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .carousel-cell {
+    width: 66%;
+    height: 400px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
