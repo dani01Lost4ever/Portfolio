@@ -12,6 +12,7 @@
     background: 
     linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), linear-gradient(0deg, rgba(255,255,255,0.3),rgba(255,255,255,0.3));
     position: relative;
+    border-radius: 5px;
   }
   .swiperContent {
     display: flex;
@@ -19,7 +20,8 @@
   
   .content-text {
     flex: 1;
-    padding-right: 20px; /* Adjust the spacing between text and image */
+    padding-right: 20px;
+    padding-left: 20px;
   }
   
   .content-image {
@@ -27,16 +29,19 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 90%;
   }
-  
-  /* Style the images in the slides */
+
   .swiper-slide img {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+    border-radius: 5px;
   }
   
-  /* Style the pagination bullets */
   .swiper-pagination {
     position: absolute;
     bottom: 10px;
@@ -55,3 +60,7 @@
     opacity: 1;
   }
   
+  .linkRepo{
+    text-decoration: none;
+    color: black;
+  }
