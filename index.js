@@ -37,10 +37,10 @@ function showwork(){
         centeredSlides: true,
         slidesPerView: 'auto',
         loop: true, // Enable infinite loop
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
+         autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
         coverflowEffect: {
             rotate: 50,
             stretch: 0,

@@ -64,3 +64,24 @@
     text-decoration: none;
     color: black;
   }
+
+  @media (max-width: 800px){ 
+  .swiper-container {
+    height: 650px;
+  }
+  .swiperContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content-image {
+      margin: 0;
+      height: auto;
+  }
+  .content-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .content-text p{
+    font-size: 18px;
+  }
+}
