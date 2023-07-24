@@ -572,4 +572,10 @@ body {
         margin-right: 0px;
         margin-bottom: 10px;
     }
+    #used div{
+        font-size:12px !important;
+    }
+    .btn_two {
+        font-size:14px;
+    }
 }
