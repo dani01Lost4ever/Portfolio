@@ -604,4 +604,10 @@ body {
     margin-top: 30px;
     margin-bottom: 10px;
   }
+  .contactForm input::placeholder {
+    font-size: 14px;
+  }
+  .contactForm textarea::placeholder {
+    font-size: 14px;
+  }
 }
