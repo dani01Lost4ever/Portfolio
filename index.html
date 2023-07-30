@@ -1,379 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Daniel Busetto</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./swiper.mod.css"/>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./swiper.mod.css" />
+  </head>
+  <body>
     <div id="loading">
-        <div id="spinner"></div>
+      <div id="spinner"></div>
     </div>
     <div id="particles-js"></div>
     <div id="box">
-        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
-        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+      <div
+        class="box1 onlywide animated bounceOutLeft"
+        style="animation-delay: 1.7s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutLeft"
+        style="animation-delay: 1.8s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutLeft"
+        style="animation-delay: 1.9s"
+      ></div>
+      <div
+        class="box2 animated bounceOutRight"
+        style="animation-delay: 1.9s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutRight"
+        style="animation-delay: 1.8s"
+      ></div>
+      <div
+        class="box2 onlywide animated bounceOutRight"
+        style="animation-delay: 1.7s"
+      ></div>
     </div>
-    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Work</a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
-    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <h1>Daniel Busetto</h1>
-        <h2>Full-stack Web Developer/ Back-end developer</h2>
-        <div id="menu">
-            <a onclick="showabout()">About</a>
-            <a onclick="showwork()">Work</a>
-            <a onclick="showcontact()">Contact</a>
-        </div>
-        <table>
-                <tr>
-                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.linkedin.com/in/daniel-busetto-0a40b125b/" class="social"><i class="fab fa-linkedin"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://t.me/dani01_CS" class="social"><i class="fab fa-telegram"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/daniel_busetto_/" class="social"><i class="fab fa-instagram"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://github.com/dani01Lost4ever" class="social"><i class="fab fa-github"></i></a></td>
-                </tr>
-        </table>
+    <a
+      id="about"
+      onclick="showabout()"
+      class="animated fadeIn"
+      style="animation-delay: 2.2s"
+      >About</a
+    >
+    <a
+      id="work"
+      onclick="showwork()"
+      class="animated fadeIn"
+      style="animation-delay: 2.2s"
+      >Work</a
+    >
+    <a
+      id="contact"
+      onclick="showcontact()"
+      class="animated fadeIn"
+      style="animation-delay: 2.2s"
+      >Contact</a
+    >
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2s">
+      <h1>Daniel Busetto</h1>
+      <h2>Full-stack Web Developer/ Back-end developer</h2>
+      <div id="menu">
+        <a onclick="showabout()">About</a>
+        <a onclick="showwork()">Work</a>
+        <a onclick="showcontact()">Contact</a>
+      </div>
+      <table>
+        <tr>
+          <td class="animated zoomIn" style="animation-delay: 2.2s">
+            <a
+              href="https://www.linkedin.com/in/daniel-busetto-0a40b125b/"
+              class="social"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.4s">
+            <a href="https://t.me/dani01_CS" class="social"
+              ><i class="fab fa-telegram"></i
+            ></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.6s">
+            <a href="https://www.instagram.com/daniel_busetto_/" class="social"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay: 2.8s">
+            <a href="https://github.com/dani01Lost4ever" class="social"
+              ><i class="fab fa-github"></i
+            ></a>
+          </td>
+        </tr>
+      </table>
     </div>
     <div id="work_container" class="container">
-        <div onclick="closework()" class="closeBtn"><i class="fas fa-angle-right angle"></i></div>
-        <h1>Works</h1>
-        <section>
-            <h2>Projects</h2>
+      <div onclick="closework()" class="closeBtn">
+        <i class="fas fa-angle-right angle"></i>
+      </div>
+      <h1>Works</h1>
+      <section>
+        <h2>Projects</h2>
 
-            <div class="swiper-container" id="#mySwiper">
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/Perfume.png" alt="Image" />
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    This is a dynamic, modern solution for the Frontend Mentor's 'Product
-                                    Preview Card Component' challenge. It integrates HTML5, CSS3, and 
-                                    JavaScript to create a responsive product preview card that will fit and 
-                                    adapt perfectly to any screen size. 
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                            </div>
-                            <button class="btn_two"><a href="https://dani01lost4ever.github.io/CSS/Pages/PrimoEs/index.html" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/Cars.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    This solution delivers an effective response to the Frontend Mentor's 
-                                    three-column preview card challenge. It uses HTML and CSS to design a 
-                                    responsive layout fitting perfectly on any screen size. The completed 
-                                    task successfully features three cards with respective descriptions and links. 
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                            </div>
-                            <button class="btn_two"><a href="https://dani01lost4ever.github.io/CSS/Pages/SecondoEs/index.html" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/Business.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    This solution to the Frontend Mentor Challenge presents 
-                                    a sleek and modern implementation of a stats-preview card 
-                                    component. Built with HTML and CSS, the design is responsive 
-                                    and adheres strikingly to the given layout, exhibiting a 
-                                    sophisticated color scheme that enhances readability. 
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                            </div>
-                            <button class="btn_two"><a href="https://dani01lost4ever.github.io/CSS/Pages/TerzoEs/" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/cosmoAPIs.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    This project is a versatile ASP.NET 7 Web API designed 
-                                    to interact with a Cosmos DB database hosted with Azure. 
-                                    The primary function of this application is to manage FAQ 
-                                    of users by providing functionality for reading, writing,
-                                    and querying data with many different filters, related to 
-                                    user questions and the state of their responses.
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;C#</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;ASP .NET 7</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Swagger</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;CosmosDB</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Azure</div>
-                            </div>
-                            <button class="btn_two"><a href="https://github.com/dani01Lost4ever/WebApplicationApi" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/battleship.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    The project is an engaging and well designed Battleship game,
-                                    developed within a Windows form application. The game stands 
-                                    out with good graphic and interactive interface, offering a 
-                                    riveting human vs AI gameplay. The AI is engineered utilizing
-                                    the advanced Minimax algorithm, ensuring a challenging and 
-                                    stimulating player experience. Adding to its uniqueness, the 
-                                    game includes a debug mode that allows players to peek into 
-                                    the AI's thought process, understanding how it's strategizing 
-                                    and deciding on its moves. 
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;C#</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Windows Form</div>
-                            </div>
-                            <button class="btn_two"><a href="https://github.com/dani01Lost4ever/BattleShip" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/TictacToe.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    The project is a well-crafted TicTacToe game, 
-                                    established in Windows form, personifying a human 
-                                    versus AI interface. The power behind this game is 
-                                    the implementation of the advanced Minimax algorithm, 
-                                    which enables the AI to predict and calculate the next 
-                                    best move, even up to 20 moves ahead, showcasing an enhanced 
-                                    level of strategic gameplay. Despite its simple interface, 
-                                    rich analytics are integrated into the system to understand 
-                                    the AI's performance and behavior better.
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;C#</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Windows Form</div>
-                            </div>
-                            <button class="btn_two"><a href="https://github.com/dani01Lost4ever/TicTacToe" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/chatGptMoreBorder.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    This project is a MAUI .NET mobile application and the
-                                    core functionality of the project is based on the mobile 
-                                    version of chat GPT. The app is designed to interpret and 
-                                    record user conversations in a local SQLite database with
-                                    enhanced security and performance. Additionally, the app 
-                                    incorporates a image-to-text feature and a voice-reading 
-                                    feature, improving accessibility and making the service 
-                                    more interactive and user-friendly.
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;C#</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;MAUI .NET</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;HTML</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;SQLite</div>
-                            </div>
-                            <button class="btn_two"><a href="#" class="linkRepo" disabled><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/AngularCart.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    This project is an e-commerce platform developed using Angular.
-                                    The platform retrieves product details stored in a MongoDB 
-                                    database, allowing users to browse through a range of items 
-                                    easily. Through its straightforward interface, customers can 
-                                    choose their desired product and specify the quantity needed,
-                                    subsequently adding them to their cart. The integration with 
-                                    MongoDB ensures real-time updates of product information.
-                                    (The image represents the first part of the frontend of this project).
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;Angular</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;HTML</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Typescript</div>
-                            </div>
-                            <button class="btn_two"><a href="https://github.com/dani01Lost4ever/Angular-2/tree/AngularAPI" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiperContent">
-                            <div class="content-image">
-                                <img src="./docs/assets/AngularCheckout.png" alt="Image"/>
-                            </div>
-                            <div class="content-text">
-                                <p>
-                                    The second key component of this project is the set of Node.js 
-                                    APIs which serve as a vital conduit between Angular and MongoDB, 
-                                    facilitating seamless communication and data exchange between the two. 
-                                    These APIs are meticulously built, employing a variety of validators 
-                                    to examine and ensure the correctness of input data, enhancing the 
-                                    overall integrity and reliability of the application. The architecture 
-                                    of the APIs is highly modular, being extensively divided into microservices. 
-                                    This design choice encourages a more manageable and scalable system that is 
-                                    easy to understand, maintain, and develop further. A considerable emphasis 
-                                    is placed on utilizing Observables, which allow for effective handling of 
-                                    asynchronous activities and data.
-                                </p>
-                            <div id="used">
-                                <div><i class="fas fa-circle"></i>&nbsp;NodeJs</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
-                                <div><i class="fas fa-circle"></i>&nbsp;Typescript</div>
-                            </div>
-                            <button class="btn_two"><a href="https://github.com/dani01Lost4ever/NodeJS/tree/CartApiComplete" class="linkRepo"><i class="fab fa-github"></i> Link to the repository</a></button>
-                            </div>
-                        </div>
-                    </div>
+        <div class="swiper-container" id="#mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/Perfume.png" alt="Image" />
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-scrollbar"></div>
+                <div class="content-text">
+                  <p>
+                    This is a dynamic, modern solution for the Frontend Mentor's
+                    'Product Preview Card Component' challenge. It integrates
+                    <b>HTML5, CSS3, and JavaScript</b> to create a
+                    <b>responsive</b> product preview card that will fit and
+                    adapt perfectly to any screen size.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://dani01lost4ever.github.io/CSS/Pages/PrimoEs/index.html"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
-
-
-            <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/Cars.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    This solution delivers an effective response to the Frontend
+                    Mentor's three-column preview card challenge. It uses
+                    <b>HTML and CSS</b> to design a <b>responsive</b> layout
+                    fitting perfectly on any screen size. The completed task
+                    successfully features three cards with respective
+                    descriptions and links.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://dani01lost4ever.github.io/CSS/Pages/SecondoEs/index.html"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button> -->
-        </section>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/Business.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    This solution to the Frontend Mentor Challenge presents a
+                    sleek and modern implementation of a stats-preview card
+                    component. Built with <b>HTML and CSS</b>, the design is
+                    <b>responsive</b>and adheres strikingly to the given layout,
+                    exhibiting a sophisticated color scheme that enhances
+                    readability.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://dani01lost4ever.github.io/CSS/Pages/TerzoEs/"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/cosmoAPIs.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    This project is a
+                    <b>versatile ASP.NET 7 Web API</b> designed to interact with
+                    a <b>Cosmos DB database</b> hosted with <b>Azure</b>. The
+                    primary function of this application is to
+                    <b>manage FAQ</b> of users by providing functionality for
+                    reading, writing, and
+                    <b>querying data with many different filters</b>, related to
+                    user questions and the state of their responses.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;ASP .NET 7</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Swagger</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CosmosDB</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Azure</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://github.com/dani01Lost4ever/WebApplicationApi"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/battleship.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    The project is an engaging and well designed Battleship
+                    game, developed within a <b>Windows Form</b> application.
+                    The game stands out with good graphic and
+                    <b>interactive interface</b>, offering a riveting human vs
+                    AI gameplay. The AI is engineered utilizing the
+                    <b>advanced Minimax algorithm</b>, ensuring a challenging
+                    and stimulating player experience. Adding to its uniqueness,
+                    the game includes a <b>debug mode</b> that allows players to
+                    peek into the <b>AI's thought process</b>, understanding how
+                    it's strategizing and deciding on its moves.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Windows Form</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://github.com/dani01Lost4ever/BattleShip"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/TictacToe.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    The project is a well-crafted TicTacToe game, established in
+                    <b>Windows Form</b>, personifying a human versus AI
+                    interface. The power behind this game is the implementation
+                    of the <b>advanced Minimax algorithm</b>, which enables the
+                    AI to <b>predict and calculate</b> the next best move, even
+                    up to 20 moves ahead, showcasing an enhanced level of
+                    strategic gameplay. Despite its simple interface,
+                    <b>rich analytics are integrated</b> into the system to
+                    understand the AI's performance and behavior better.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Windows Form</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://github.com/dani01Lost4ever/TicTacToe"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/chatGptMoreBorder.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    This project is a <b>MAUI .NET</b> mobile application and
+                    the core functionality of the project is based on the mobile
+                    version of <b>chat GPT</b>. The app is designed to interpret
+                    and record user conversations in a
+                    <b>local SQLite database</b> with enhanced security and
+                    performance. Additionally, the app incorporates a
+                    <b>image-to-text</b> feature and a
+                    <b>voice-reading</b> feature, improving accessibility and
+                    making the service more interactive and user-friendly.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MAUI .NET</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;SQLite</div>
+                  </div>
+                  <button class="btn_two">
+                    <a href="#" class="linkRepo" disabled
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/AngularCart.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    This project uses <b>Angular</b> to develop an e-commerce
+                    platform that pulls product information from a
+                    <b>MongoDB database</b>, facilitating user-friendly browsing
+                    and shopping. The system seamlessly
+                    <b>updates product info in real time</b> and includes an
+                    <b>intuitive interface</b> for customers to select and add
+                    items to their cart. (The image showcases the initial
+                    frontend design.)
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Angular</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Typescript</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://github.com/dani01Lost4ever/Angular-2/tree/AngularAPI"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperContent">
+                <div class="content-image">
+                  <img src="./docs/assets/AngularCheckout.png" alt="Image" />
+                </div>
+                <div class="content-text">
+                  <p>
+                    The project's second key component is the set of
+                    <b>Node.js APIs</b>, bridging Angular and MongoDB for data
+                    exchange. The meticulously constructed APIs
+                    <b>use validators</b> to ensure data accuracy, increasing
+                    application reliability. Their
+                    <b>microservices-based modular architecture</b> fosters a
+                    scalable, manageable system, with a focus on using
+                    <b>Observables for efficient asynchronous activities</b> and
+                    data handling.
+                  </p>
+                  <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;NodeJs</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Typescript</div>
+                  </div>
+                  <button class="btn_two">
+                    <a
+                      href="https://github.com/dani01Lost4ever/NodeJS/tree/CartApiComplete"
+                      class="linkRepo"
+                      ><i class="fab fa-github"></i> Link to the repository</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
     </div>
     <div id="about_container" class="container">
-            <div onclick="closeabout()" class="closeBtn"><i class="fas fa-angle-left angle"></i></div>
-            <h1>About</h1>
-            <section class="card about">
-                <h2>A Bit More About Who I Am</h2>
-                <p>
-                    Hello! I'm Daniel, a passionate junior full-stack web developer.
-                    My journey in coding has allowed me to gain solid experience with a diverse range of technologies. 
-                    I love how coding combines problem-solving and creative thinking, turning simple ideas into transformative realities.
-                </p>
-                    
-                <p>
-                    Outside the world of coding, my mind stays active with gaming and code challenges. 
-                    The fantasy of games fuels my creativity and resilience, while code challenges keep my problem-solving 
-                    abilities agile for my next project. As I navigate the dynamic tech industry, my aim is to learn, adapt, and grow.
-                </p>
-                    
-                <p>
-                    I invite you to take a journey through my portfolio. I am always  excited to discuss potential 
-                    projects or collaborations or symply if you wanna speak about coding or gaming, I'm all ears. 
-                    Please feel welcome to connect with me - let's talk!
-                </p>
-            </section>
-            <section>
-                <h2>Skills</h2>
-                <div class="cards-container">
-                    <div class="card programming">
-                        <h3>Programming Languages & Tools:</h3>
-                        <ul>
-                            <li>Proficient in <b>C#</b> and <b>Java</b>.</li>
-                            <li>Strong experience with .NET frameworks, specifically <b>ASP.NET Core 6/7</b>.</li>
-                            <li>Very expansive knowledge in <b>developing APIs</b>.</li>
-                            <li>Database management and structural knowledge, experienced with <b>SQL</b>, <b>CosmosDB</b>, and <b>MongoDB</b>.</li>
-                        </ul>
-                    </div>
-                    <div class="card web">
-                        <h3>Web Development:</h3>
-                        <ul>
-                            <li>Experienced in <b>Node.js</b> and <b>Next.js</b>.</li>
-                            <li>Advanced proficiency in <b>JavaScript</b>, <b>TypeScript</b>.</li>
-                            <li>Strong understanding and application of front-end frameworks like <b>Angular</b> and <b>React.js</b>.</li>
-                            <li>Experienced with enterprise-level websites and content management using <b>Magnolia CMS</b>.</li>
-                            <li>Possesses basic knowledge in <b>Internet Security</b> and experience in developing <b>Secure Payment</b> workflows.</li>
-                        </ul>
-                    </div>
-                    <div class="card softskill">
-                        <h3>Soft skills:</h3>
-                        <ul>
-                            <li>Excellent <b>team player</b> with abilities to work well in cross-functional teams.</li>
-                            <li>Strong <b>problem-solving</b> skills, with an aptitude for identifying issues and implementing efficient solutions.</li>
-                            <li>Proficient in <b>time management</b> skills, ensuring tasks get completed in a timely and efficient manner.</li>
-                            <li><b>Highly organized</b>, able to manage multiple tasks simultaneously and prioritize accordingly.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+      <div onclick="closeabout()" class="closeBtn">
+        <i class="fas fa-angle-left angle"></i>
+      </div>
+      <h1>About</h1>
+      <section class="card about">
+        <h2>A Bit More About Who I Am</h2>
+        <p>
+          Hello! I'm Daniel, a passionate junior full-stack web developer. My
+          journey in coding has allowed me to gain solid experience with a
+          diverse range of technologies. I love how coding combines
+          problem-solving and creative thinking, turning simple ideas into
+          transformative realities.
+        </p>
+
+        <p>
+          Outside the world of coding, my mind stays active with gaming and code
+          challenges. The fantasy of games fuels my creativity and resilience,
+          while code challenges keep my problem-solving abilities agile for my
+          next project. As I navigate the dynamic tech industry, my aim is to
+          learn, adapt, and grow.
+        </p>
+
+        <p>
+          I invite you to take a journey through my portfolio. I am always
+          excited to discuss potential projects or collaborations or symply if
+          you wanna speak about coding or gaming, I'm all ears. Please feel
+          welcome to connect with me - let's talk!
+        </p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <div class="cards-container">
+          <div class="card programming">
+            <h3>Programming Languages & Tools:</h3>
+            <ul>
+              <li>Proficient in <b>C#</b> and <b>Java</b>.</li>
+              <li>
+                Strong experience with .NET frameworks, specifically
+                <b>ASP.NET Core 6/7</b>.
+              </li>
+              <li>Very expansive knowledge in <b>developing APIs</b>.</li>
+              <li>
+                Database management and structural knowledge, experienced with
+                <b>SQL</b>, <b>CosmosDB</b>, and <b>MongoDB</b>.
+              </li>
+            </ul>
+          </div>
+          <div class="card web">
+            <h3>Web Development:</h3>
+            <ul>
+              <li>Experienced in <b>Node.js</b> and <b>Next.js</b>.</li>
+              <li>
+                Advanced proficiency in <b>JavaScript</b>, <b>TypeScript</b>.
+              </li>
+              <li>
+                Strong understanding and application of front-end frameworks
+                like <b>Angular</b> and <b>React.js</b>.
+              </li>
+              <li>
+                Experienced with enterprise-level websites and content
+                management using <b>Magnolia CMS</b>.
+              </li>
+              <li>
+                Possesses basic knowledge in <b>Internet Security</b> and
+                experience in developing <b>Secure Payment</b> workflows.
+              </li>
+            </ul>
+          </div>
+          <div class="card softskill">
+            <h3>Soft skills:</h3>
+            <ul>
+              <li>
+                Excellent <b>team player</b> with abilities to work well in
+                cross-functional teams.
+              </li>
+              <li>
+                Strong <b>problem-solving</b> skills, with an aptitude for
+                identifying issues and implementing efficient solutions.
+              </li>
+              <li>
+                Proficient in <b>time management</b> skills, ensuring tasks get
+                completed in a timely and efficient manner.
+              </li>
+              <li>
+                <b>Highly organized</b>, able to manage multiple tasks
+                simultaneously and prioritize accordingly.
+              </li>
+            </ul>
+          </div>
         </div>
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()" class="closeBtn"><i class="fas fa-angle-down angle"></i></div>
-            <h1>Contacts</h1>
-            <section>
-                <h2>Message me</h2>
-                <div class="contactForm">
-                    <form method="post" action="https://forms.un-static.com/forms/06ae581a12c83f106b3f65c2ef370c12f1326d18">
-                        <input name="Name" type="text" placeholder="Name..." required class="hoverClass">
-                        <input name="Email" type="email" placeholder="Email..." required class="hoverClass">
-                        <input name="Subject" type="text" placeholder="Subject..." required class="hoverClass"><br>
-                        <textarea name="Message" placeholder="Leave your message here!" required rows="5" class="hoverClass"></textarea><br>
-                        <button type="submit" class="btn_one">
-                            <span class="material-symbols-outlined">
-                                send
-                            </span>
-                        </button>
-                    </form> 
-                </div>
-            </section>
+      </section>
+    </div>
+    <div id="contact_container" class="container">
+      <div onclick="closecontact()" class="closeBtn">
+        <i class="fas fa-angle-down angle"></i>
+      </div>
+      <h1>Contacts</h1>
+      <section>
+        <h2>Message me</h2>
+        <div class="contactForm">
+          <form
+            method="post"
+            action="https://forms.un-static.com/forms/06ae581a12c83f106b3f65c2ef370c12f1326d18"
+          >
+            <input
+              name="Name"
+              type="text"
+              placeholder="Name..."
+              required
+              class="hoverClass"
+            />
+            <input
+              name="Email"
+              type="email"
+              placeholder="Email..."
+              required
+              class="hoverClass"
+            />
+            <input
+              name="Subject"
+              type="text"
+              placeholder="Subject..."
+              required
+              class="hoverClass"
+            /><br />
+            <textarea
+              name="Message"
+              placeholder="Leave your message here!"
+              required
+              rows="5"
+              class="hoverClass"
+            ></textarea
+            ><br />
+            <button type="submit" class="btn_one">
+              <span class="material-symbols-outlined"> send </span>
+            </button>
+          </form>
         </div>
+      </section>
+    </div>
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-</body>
+  </body>
 </html>
